@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/output.css">
+    <title>CV Ferradj Abdelkader</title>
+
+    <style>
+        .anta{
+            font-family: "Anta";
+        }
+        *{
+            font-family: "Manrope";
+        }
+
+        h2{
+            margin:2rem 0rem;
+        }
+        .bg-blue{
+            background-color: #484C70;
+
+        }
+        .color-blue{
+            background-color:#484C70;
+        }
+
+        .exp-box{
+            display:flex;
+            border-left: #484C70;
+            border-style: dotted;
+            margin:auto;
+        }
+
+        .exp-box ul{
+            list-style:circle;
+        }
+
+        .exp-box>div{
+            margin:1rem 2rem;
+            padding: 1rem;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+
+            position: relative;
+            bottom:2rem;
+            width:100%;
+        }
+
+        
+        .exp-box::before{
+            content:"";
+            display: inline-block;
+            width:60px;
+            height:60px;
+            background-color:#484C70;
+            border-radius: 60px;
+            position: relative;
+            right:30px;
+           
+        }
+        .exp-box:nth-child(1)::before{
+           
+            background-color:#f6ac45;
+            border:15px solid #484C70;
+            border-radius: 30px;
+           
+        }
+
+        .exp-box:nth-last-child(1){
+           
+           border-left:none;
+          
+       }
+
+       .exp{
+        width:fit-content;
+        margin: auto;
+       
+
+       }
+
+       .blue-box, .comp-box{
+margin:2rem;
+min-height:20rem;
+padding:2rem;
+border: 1px solid #1C274C;
+box-shadow: 5px -5px 0px #1C274C;
+border-radius: 25px;
+display:flex;
+flex-direction: column;
+justify-content: space-around;
+text-align: center;
+
+       }
+
+       .comp-box{
+        border: 1px solid #ffab2e;
+        box-shadow: 5px -5px 0px #ffab2e;
+        height:fit-content;
+
+       }
+
+      
+
+
+    </style>
+</head>
+<body class="">
+
+    <header class="flex w-full justify-between items-center">
+        <div class="logo flex flex-col p-8"><span class="name text-blue-900 anta text-2xl">FERRADJ Abdelkader</span>
+        <span class="work">Opérateur numérique chez Acces</span></div>
+        <nav class="p-8 font-bold anta">
+            <a class="m-4" href="index.html">Accueil</a>
+            <a class="m-4" href="#experience">Expérience</a>
+            <a class="m-4" href="#formation">Formation</a>
+            <a class="m-4" href="#competences">Compétences</a>
+            <a class="m-4" href="#quisuisje">Qui suis-je ?</a>
+            <a class="md:mx-4 md:cta-blue md:rounded-3xl md:bg-blue md:p-4 md:text-white lg:mx-4 lg:cta-blue lg:rounded-3xl lg:bg-blue lg:p-4 lg:text-white" href="#contact">Echangeons</a>
+
+        </nav>
+    </header>
+
+    <div id="home-bloc" class="h-screen flex ">
+        <img src="" alt=""  class="max-md:w-0 w-1/2">
+        <div class="max-md:w-full side-right flex flex-col items-center w-1/2 bg-blue p-8">
+            <img src="assets/folder.svg" alt="" class="icon-big w-sm">
+            <h1 class="anta text-white text-3xl p-4">Votre futur assistant administratif</h1>
+            <p class="text-wrap text-white">Je me présente : Abdelkader Ferradj, actuellement opérateur numérique chez Acces Inclusive Tech. Motivé par l’archivage documentaire, je suis peut être le prochain opérateur qu’il vous faut !</p>
+            <a href="" class=" m-4 p-4 rounded-3xl bg-white font-bold">Télécharger mon CV</a>
+        </div>
+    </div>
+
+    <div id="rsx" class="flex items-center justify-center">
+        <div class="bar"><a class="anta p-4" href="tel:+33605649234"><img class="m-auto" src="assets/tel.svg" alt="" >06.65.64.92.34</a></div>
+        <div class="bar"><a class="anta p-4" href="mailto:ferradj@gmail.com"><img class="m-auto" src="assets/mail.svg" alt="" >ferradj@gmail.com</a></div>
+        <div class="bar"><a class="anta p-4" href="linkedin.com"><img class="m-auto" src="assets/linkedin.svg" alt="" >Abdelkader Ferradj</a></div>
+    </div>
+    
+    <div class="p-12 flex flex-col" id="experience">
+<h2 class="anta text-2xl">Expériences</h2>
+
+<div class="exp">
+    <div class="exp-box">
+        <div>
+            <h3 class="title anta text-xl  text-amber-500">Opérateur Numérique Support User</h3>
+        <div class="place flex "><img src="assets/maps.svg" alt="" class="icon-lil"><span>ACCES INCLUSIVE TECH chez EDF Nanterre </span></div>
+        <div class="date flex"><img src="assets/time.svg" alt="" class="icon-lil mx-1"><span>2023 - Aujourd’hui</span></div>
+        <ul class="mx-6">
+            <li>Traiter les demandes des utilisateurs</li>
+            <li>Labelliser des documents</li>
+            <li>Numériser et classer les documents</li>
+            <li>Établir des comptes</li>
+            <li>Actualiser les informations</li>
+            <li>Gerer des tickets Itzmi</li>
+        </ul>
+
+        </div>
+        
+    </div>
+</div>
+
+    </div>
+
+
+    <div class="p-12 flex flex-col" id="formation">
+        <h2 class="anta text-2xl">Formation</h2>
+        <div class="formation flex flex-wrap justify-center">
+
+        </div>
+        
+    </div>
+
+    <div class="p-12 flex flex-col" id="competences">
+        <h2 class="anta text-2xl">Compétences</h2>
+        <div class="competences flex flex-wrap justify-center">
+            
+        </div>
+        
+    </div>
+
+    <div class="p-12 flex flex-col" id="quisuisje">
+        <h2 class="anta text-2xl">Qui suis-je ?</h2>
+
+        <div class="img-txt flex flex-col">
+            <p class="md:w-[70%] m-auto">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus ab harum vero inventore impedit, molestias nulla quisquam velit nihil placeat cupiditate facilis. Recusandae nihil autem quaerat reiciendis voluptates ipsum fugiat?
+            </p>
+            <div class="img flex m-auto">
+<img src="assets/run.svg" alt="">
+<img src="assets/travel.svg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="p-12 flex flex-col" id="contact">
+        <h2 class="anta text-2xl">Contact</h2>
+
+        <p class="md:w-[70%] m-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <form class="flex flex-col md:w-[70%] md:m-auto" action="">
+            <label class="md:m-4 my-2 p-2" for="email">Email</label>
+            <input class="md:m-4 my-2 p-2 shadow-sm rounded-2xl border border-gray-200" type="email" name="email">
+            <label class="md:m-4 my-2 p-2" for="content">Message</label>
+            <textarea class="md:m-4 my-2 p-2 shadow-sm rounded-2xl border border-gray-200" name="content" id="content"></textarea>
+            <button class="md:w-1/4 mx-auto my-4 cta-blue rounded-3xl bg-blue p-4 text-white" type="submit">Envoyer</button>
+        </form>
+    </div>
+
+
+<footer class="bg-blue white flex max-md:flex-col justify-between p-4">
+<div class="left max-md:m-auto">
+    <div class="logo flex flex-col p-8"><span class="name text-white anta text-2xl">FERRADJ Abdelkader</span>
+        <span class="work bold text-amber-600">Opérateur numérique chez Acces</span></div>
+    <div class="rsx"></div>
+</div>
+
+<div class="middle m-auto text-white">
+    <span>Copyright @ 2025 Assia Ferradj</span>
+    <span>All rights reserved.</span>
+</div>
+
+<div class="right max-md:mx-auto  text-white flex flex-col m-4"><a class="max-md:mx-auto" href="index.html">Accueil</a>
+    <a class="max-md:mx-auto" href="#experience">Expérience</a>
+    <a class="max-md:mx-auto" href="#formation">Formation</a>
+    <a class="max-md:mx-auto" href="#competences">Compétences</a>
+    <a class="max-md:mx-auto" href="#quisuisje">Qui suis-je ?</a>
+    <a class="max-md:mx-auto" href="#contact">Echangeons</a>
+
+</div>
+
+
+</footer>
+
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>
