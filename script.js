@@ -32,12 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "Faire l'inventaire et désarchiver des documents"
         ]),
         new Experience("Professeur d’espagnol", "Algérie", "1987 - 2001", [
-            "Gérer les dossiers administratifs",
-            "Vérifier les paiements des clients et des fournisseurs",
-            "Traiter le courrier et organiser les e-mails",
-            "Archiver les enveloppes de vol",
-            "Classer et archiver les pièces comptables (physiques et informatiques)",
-            "Faire l'inventaire et désarchiver des documents"
+            "Enseigner aux étudiants à parler, comprendre et écrire dans la langue espagnole",
+            "Elaborer le programme d’enseignement de l’espagnol Cycle lycée "
         ])
     ];
 
