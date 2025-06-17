@@ -16,6 +16,7 @@
         }
         *{
             font-family: "Manrope";
+            box-sizing: border-box;
         }
 
         h2{
@@ -58,9 +59,10 @@
             width:60px;
             height:60px;
             background-color:#484C70;
-            border-radius: 60px;
+            border-radius: 100%;
             position: relative;
             right:30px;
+            overflow:hidden;
            
         }
         .exp-box:nth-child(1)::before{
@@ -105,6 +107,19 @@ text-align: center;
 
        }
 
+       @media (max-width: 768px) {
+        .exp-box::before{
+            
+            right:20px;
+           
+        }
+        
+        .exp-box>div{
+            margin:0;
+        }    
+    }
+
+
       
 
 
@@ -115,19 +130,19 @@ text-align: center;
     <header class="flex w-full justify-between items-center">
         <div class="logo flex flex-col p-8"><span class="name text-blue-900 anta text-2xl">FERRADJ Abdelkader</span>
         <span class="work">Opérateur numérique chez Acces</span></div>
-        <nav class="p-8 font-bold anta">
+        <nav class="p-8 max-md:p-0 font-bold anta">
             <a class="m-4" href="index.html">Accueil</a>
             <a class="m-4" href="#experience">Expérience</a>
             <a class="m-4" href="#formation">Formation</a>
             <a class="m-4" href="#competences">Compétences</a>
             <a class="m-4" href="#quisuisje">Qui suis-je ?</a>
-            <a class="md:mx-4 md:cta-blue md:rounded-3xl md:bg-blue md:p-4 md:text-white lg:mx-4 lg:cta-blue lg:rounded-3xl lg:bg-blue lg:p-4 lg:text-white" href="#contact">Echangeons</a>
+            <a class="mx-4 md:cta-blue md:rounded-3xl md:bg-blue md:p-4 md:text-white lg:mx-4 lg:cta-blue lg:rounded-3xl lg:bg-blue lg:p-4 lg:text-white" href="#contact">Echangeons</a>
 
         </nav>
     </header>
 
     <div id="home-bloc" class="h-screen flex ">
-        <img src="" alt=""  class="max-md:w-0 w-1/2">
+        <img src="assets/desk.jpg" alt=""  class="max-md:w-0 w-1/2 object-cover">
         <div class="max-md:w-full side-right flex flex-col items-center w-1/2 bg-blue p-8">
             <img src="assets/folder.svg" alt="" class="icon-big w-sm">
             <h1 class="anta text-white text-3xl p-4">Votre futur assistant administratif</h1>
@@ -191,7 +206,7 @@ text-align: center;
             <p class="md:w-[70%] m-auto">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus ab harum vero inventore impedit, molestias nulla quisquam velit nihil placeat cupiditate facilis. Recusandae nihil autem quaerat reiciendis voluptates ipsum fugiat?
             </p>
-            <div class="img flex m-auto">
+            <div class="img flex flex-wrap justify-center  m-auto">
 <img src="assets/run.svg" alt="">
 <img src="assets/travel.svg" alt="">
             </div>

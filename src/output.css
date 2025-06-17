@@ -326,6 +326,9 @@
   .justify-center {
     justify-content: center;
   }
+  .overflow-hidden {
+    overflow: hidden;
+  }
   .rounded {
     border-radius: 0.25rem;
   }

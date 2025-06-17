@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie d'Images avec Défilement</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .gallery {
+            width: 20rem;
+            height: 10rem;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            display: flex;
+            align-items: center; /* Aligne les éléments verticalement au centre */
+        }
+        .gallery-container{
+            width: fit-content;
+        }
+
+        .gallery-container::after {
+            content: '';
+            height: 50px;
+            width: 100%;
+            border-radius: 100%;
+            position: relative;
+            bottom:30px;
+            background-color: rgb(255, 255, 255);
+            display: inline-block; /* Utilise inline-block pour s'intégrer dans le flux */
+            flex-shrink: 0; /* Empêche l'élément de rétrécir */
+        }
+
+        .gallery-container::before {
+            content: '';
+            height: 50px;
+            width: 100%;
+            border-radius: 100%;
+            position: relative;
+            top:30px;
+            background-color: rgb(255, 255, 255);
+            display: inline-block; /* Utilise inline-block pour s'intégrer dans le flux */
+            flex-shrink: 0; /* Empêche l'élément de rétrécir */
+        }
+
+        .gallery div {
+            min-width: 50px;
+            min-height: 500px;
+            background-color: aqua;
+            margin: 10px;
+            flex-shrink: 0; /* Empêche les éléments de rétrécir */
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="gallery">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</body>
+</html>
