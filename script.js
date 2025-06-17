@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', () => {
         new Experience("INCLU PRO Pôle emploi Mitry-Mory: Projet de reconversion professionnelle", "Immersion chez ACCES INCLUSIVE TECH Saint Denis", "Octobre 2022 - Mars 2023", [
             "Labellisation et classement de documents Machine Learning AXA."
         ]),
+        new Experience("Agent de tri", "Manpower Tremblay-En-France", "Décembre 2021"),
         new Experience("Préparateur de commandes", "Crit Intérim Mitry-Mory", "2018 - 2021"),
         new Experience("Employé administratif / Agent d’archivage", "Aigle Azur, Tremblay en France", "2010 - 2017", [
             "Gérer les dossiers administratifs",
