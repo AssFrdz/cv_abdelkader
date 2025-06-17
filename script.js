@@ -14,8 +14,8 @@ document.addEventListener('DOMContentLoaded', () => {
             "Traiter les demandes des utilisateurs",
             "Labelliser des documents",
             "Numériser et classer les documents",
-            "Établir des comptes",
-            "Actualiser les informations",
+            "Gérer des comptes",
+            "Mise à jour de données",
             "Gerer des tickets Itzmi"
         ]),
         new Experience("DUODAY Opérateur Administratif de GED", "La Cour administrative d'appel de Paris", "Décembre 2024"),
